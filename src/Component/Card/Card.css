@@ -1,0 +1,64 @@
+/* Card.css */
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card-image {
+    width: 100%;
+    max-height: 200px; /* Set maximum height for the image */
+    overflow: hidden; /* Ensure overflow is hidden for uniformity */
+    border-radius: 8px;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    /* Ensure image covers the entire container */
+  }
+  
+  .card-details {
+    margin-top: 0.5rem;
+  }
+  
+  .card-info {
+    margin-bottom: 0.5rem;
+    font-size: 1rem; /* Adjust font size for product information */
+  }
+  
+  .card-summary {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  .form-button{
+    background-color: goldenrod;
+    width: 60%;
+  }
+  .form-button:hover{
+    background-color: green;
+  }
+  .add-to-cart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #218838;
+  }

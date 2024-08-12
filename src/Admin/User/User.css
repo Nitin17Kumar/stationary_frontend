@@ -1,0 +1,129 @@
+.config-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+    background-color: #f9f9f9;
+  }
+  
+  .config-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .config-nav button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .config-nav button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .user-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form styling */
+  .user-form {
+    width: 100%;
+  }
+  
+  .user-form legend {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .user-form label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .user-form input[type="text"],
+  .user-form input[type="email"],
+  .user-form input[type="password"],
+  .user-form input[type="file"],
+  .user-form input[type="checkbox"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .user-form button[type="submit"] {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .user-form button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  .image-preview {
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+  
+  /* Config.css */
+
+/* Custom styling for dropdown */
+.user-form select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  appearance: none; /* Remove default arrow */
+  background-image: linear-gradient(to bottom, #ffffff, #f9f9f9); /* Gradient background */
+  background-position: right 8px center; /* Position arrow */
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.user-form select:hover {
+  border-color: #007bff; /* Highlight border on hover */
+}
+
+.user-form select:focus {
+  outline: none; /* Remove outline on focus */
+  border-color: #007bff; /* Highlight border on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Add focus shadow */
+}

@@ -1,0 +1,131 @@
+/* General styles for the container */
+.admin-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f0f0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Styles for the image container */
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Styles for individual images */
+.background-image,
+.login-image {
+  position: absolute;
+  width: 40%;
+  height: auto;
+  border-radius: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.background-image {
+  left: 10%;
+  transform: translate(-10%, -50%) translateX(-2rem);
+  z-index: 1;
+}
+
+.login-image {
+  right: 10%;
+  transform: translate(-50%, -40%) translateX(2rem);
+  z-index: 2;
+}
+
+/* Styles for the signup form */
+.admin-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  margin-left: 50%;
+}
+
+legend {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #555;
+}
+
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button[type='submit'] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button[type='submit']:hover {
+  background-color: #45a049;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .admin-container {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .admin-form {
+    width: 90%;
+    padding: 20px;
+    margin-left: 0;
+  }
+
+  .background-image,
+  .login-image {
+    display: none; /* Hide images on small screens */
+  }
+
+  .close-button {
+    top: 5px;
+    right: 5px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .admin-form {
+    width: 50%;
+  }
+
+  .background-image,
+  .login-image {
+    width: 30%;
+  }
+}
